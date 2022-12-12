@@ -1,13 +1,23 @@
 from distutils.core import setup
-from distutils.extension import Extension
-from Cython.Distutils import build_ext
 
-ext_modules = [
-    Extension("ancrypt",  ["ancrypt.py"]),
+packages = [
+    'O_anubis',
 ]
 
 setup(
-    name = 'Ancrypt',
-    cmdclass = {'build_ext': build_ext},
-    ext_modules = ext_modules
+    name = "anubis-ovlic",
+    version = "0.0.1",
+    packages = packages,
+    author = "Ovlic",
+    description = "My copy of 0sir1ss Anubis for my school encryption project.",
+    url = "https://github.com/ovlic/anubis-ovlic",
+    project_urls = {
+        "Bug Tracker": "https://github.com/ovlic/anubis-ovlic/issues",
+    },
+    classifiers = {
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+    },
+    include_package_data=True,
+    python_requires = '>=3.6',
 )
