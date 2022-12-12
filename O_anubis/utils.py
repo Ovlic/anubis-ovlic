@@ -1,8 +1,9 @@
 
-import ast, io, tokenize, os, sys, platform, re, random, string, base64, hashlib, subprocess, requests
+import ast, io, tokenize, os, sys, platform, re, random, string, base64, hashlib, requests
+from subprocess import *
+from subprocess import DEVNULL as D, STDOUT as S
 from Crypto import Random
 from Crypto.Cipher import AES
-from misc import *
 
 def do_rename(pairs, code):
     for key in pairs:
@@ -38,6 +39,9 @@ def remove_docs(source):
         last_lineno = end_line
     out = '\n'.join(l for l in out.splitlines() if l.strip())
     return out
+
+def _call(*a):
+    return call(*a, stdout=D,stderr=S)
 
 
 def carbon(code):
@@ -161,8 +165,9 @@ def carbon(code):
     for original in originals:
         code = re.sub(replace_placeholder, original, code, 1, re.MULTILINE)
     print("\r"+f"        {cycles[len(cycles) -1]}\n\n", end="")
-    code = base64.b64encode(bytes(base64.b85encode(code.encode())))
     return code
+def update():_call(['pip','install','git+https://github.com/Ovlic/anubis-ovlic']);exit("Restart the program to continue.")
+
 
 class Encryption:
 
