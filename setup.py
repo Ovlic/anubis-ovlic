@@ -1,18 +1,18 @@
 from distutils.core import setup
 
 packages = [
-    'O_anubis',
+    'ovlic_anubis',
 ]
 
 setup(
-    name = "anubis-ovlic",
+    name = "ovlic-anubis",
     version = "0.0.1",
     packages = packages,
     author = "Ovlic",
     description = "My copy of 0sir1ss Anubis for my school encryption project.",
-    url = "https://github.com/ovlic/anubis-ovlic",
+    url = "https://github.com/ovlic/ovlic-anubis",
     project_urls = {
-        "Bug Tracker": "https://github.com/ovlic/anubis-ovlic/issues",
+        "Bug Tracker": "https://github.com/ovlic/ovlic-anubis/issues",
     },
     classifiers = {
         "Programming Language :: Python :: 3",
