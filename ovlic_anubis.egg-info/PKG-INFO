@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ovlic-anubis
+Version: 0.0.1
+Summary: My copy of 0sir1ss Anubis for my school encryption project.
+Home-page: https://github.com/ovlic/ovlic-anubis
+Author: Ovlic
+Project-URL: Bug Tracker, https://github.com/ovlic/ovlic-anubis/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
