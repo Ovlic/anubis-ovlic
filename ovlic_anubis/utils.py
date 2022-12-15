@@ -2,7 +2,6 @@
 import ast, io, tokenize, os, sys, platform, re, random, string, base64, hashlib, subprocess, requests
 from Crypto import Random
 from Crypto.Cipher import AES
-from misc import *
 
 def do_rename(pairs, code):
     for key in pairs:

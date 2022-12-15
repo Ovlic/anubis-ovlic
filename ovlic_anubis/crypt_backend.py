@@ -1,5 +1,5 @@
-import base64, os, utils
-import ancrypt
+import base64, os
+from . import ancrypt, utils
 
 
 def decrypt(ciphertext:str):
