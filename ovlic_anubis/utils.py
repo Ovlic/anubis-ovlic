@@ -160,7 +160,6 @@ def carbon(code):
     for original in originals:
         code = re.sub(replace_placeholder, original, code, 1, re.MULTILINE)
     print("\r"+f"        {cycles[len(cycles) -1]}\n\n", end="")
-    code = base64.b64encode(bytes(base64.b85encode(code.encode())))
     return code
 
 class Encryption:
