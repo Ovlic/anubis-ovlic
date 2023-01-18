@@ -8,6 +8,9 @@ setup(
     name = "ovlic-anubis",
     version = "0.0.1",
     packages = packages,
+    install_requires = [
+        "pycrypto",
+    ],
     author = "Ovlic",
     description = "My copy of 0sir1ss Anubis for my school encryption project.",
     url = "https://github.com/ovlic/ovlic-anubis",
