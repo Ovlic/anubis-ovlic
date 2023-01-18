@@ -9,7 +9,7 @@ setup(
     version = "0.0.1",
     packages = packages,
     install_requires = [
-        "pycrypto",
+        "pycryptodome",
         "requests",
     ],
     author = "Ovlic",
