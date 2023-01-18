@@ -1,5 +1,5 @@
 
-import ast, io, tokenize, os, sys, platform, re, random, string, base64, hashlib, subprocess, requests
+import io, tokenize, os, re, base64, hashlib
 from Crypto import Random
 from Crypto.Cipher import AES
 
