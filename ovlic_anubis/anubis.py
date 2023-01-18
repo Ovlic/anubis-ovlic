@@ -1,6 +1,5 @@
 # Made by 0sir1ss @ https://github.com/0sir1ss/Anubis
 import ast, io, tokenize, os, sys, platform, re, random, string, base64, hashlib, subprocess, requests
-from regex import F
 from Crypto import Random
 from Crypto.Cipher import AES
 
