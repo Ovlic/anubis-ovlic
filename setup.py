@@ -10,6 +10,7 @@ setup(
     packages = packages,
     install_requires = [
         "pycrypto",
+        "requests",
     ],
     author = "Ovlic",
     description = "My copy of 0sir1ss Anubis for my school encryption project.",
