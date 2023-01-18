@@ -1,4 +1,4 @@
-import base64, hashlib, os, subprocess, tempfile, sys, time, py_compile
+import base64, hashlib, os, tempfile
 from Crypto.Cipher import AES
 
 class Anubis:
